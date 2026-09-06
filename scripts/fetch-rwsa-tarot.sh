@@ -5,9 +5,17 @@
 # commonnew.js dispbig handler). ~80 images, ~3 MB each. Resumable: existing files
 # are skipped, so re-running only fetches what's missing.
 #
-# Licensing: the 1909 deck is public domain, but these are the site owner's own
-# cleaned-up scans and the page asks for can-I-use requests by e-mail. Fine for
-# private/dev use; get permission before shipping them in a public build.
+# Licensing: the 1909 deck is public domain. These are the site owner's own
+# cleaned-up scans, and the page asks for can-I-use requests by e-mail --
+# permission for this 80-image set was confirmed by the project owner on
+# 2026-07-15. See decision D1 in
+# docs/superpowers/plans/2026-07-15-campaigns-shared-tarot-roadmap.md and the
+# permissionBasis field in static/tarot/rwsa/tarot-art.json, which is the
+# record of record.
+#
+# Only these particular scans carry a permission claim; the 1909 artwork is
+# public domain independently of them, which is why the source collection is
+# deliberately swappable (scripts/tarot-art/source-map.mjs, COLLECTION).
 
 set -euo pipefail
 
